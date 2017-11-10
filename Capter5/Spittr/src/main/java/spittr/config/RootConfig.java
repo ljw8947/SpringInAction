@@ -3,8 +3,11 @@ package spittr.config;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import javax.validation.Valid;
+import javax.validation.executable.ValidateOnExecution;
 import java.io.File;
 
 /**
