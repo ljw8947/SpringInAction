@@ -45,11 +45,11 @@ public class SpitterController {
         if(errors.hasErrors()){
             return "registerForm";
         }
-
         spitterRepository.save(spitter);
         //return "redirect:/spitter/"+ spitter.getUsername();
         return "redirect:/spitter/"+ spitterRepository.findByUsername("").getUsername();
     }
+
 
     @RequestMapping(value = "/{username}",method = GET)
     public String showSpitterProfile(
