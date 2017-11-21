@@ -14,7 +14,7 @@ _
 /src\main\java\spittr\web\SpittleController.java,e\f\efd444314c2e6be71b779fe2f6927c5da13e9359
 Q
 !src\main\java\spittr\Spitter.java,6\8\685938558f8e9ba32001501dbf52152e99704a36
-[
-+src\main\java\spittr\config\RootConfig.java,a\c\acec54dd39cb58954f7a1272168c025a3b628a3a
 _
 /src\main\java\spittr\web\SpitterController.java,8\e\8e53b43a96b21bf6d2cc8cd5467c6a3fc85a6bdc
+[
++src\main\java\spittr\config\RootConfig.java,a\c\acec54dd39cb58954f7a1272168c025a3b628a3a
