@@ -16,6 +16,11 @@
     <!--Execute flows:the entry point into the Spring Web Flow system-->
     <flow:flow-executor id="flowExecutor"/>
 
+    <!--Dispatches requests mapped to flows to FlowHandler implementations-->
+    <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
+        <property name="flowExecutor" ref="flowExecutor"/>
+    </bean>
+
     <!--The reigistry of executable flow definitions-->
     <flow:flow-registry id="flowRegistry" base-path="/WEB-INF/flows">
         <flow:flow-location-pattern value="/**/*-flow.xml"/>
@@ -27,9 +32,6 @@
         <property name="flowRegistry" ref="flowRegistry"/>
     </bean>
 
-    <!--Dispatches requests mapped to flows to FlowHandler implementations-->
-    <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
-        <property name="flowExecutor" ref="flowExecutor"/>
-    </bean>
+
     
 </beans>
